@@ -21,11 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <UserProvider>
         <body className={inter.className}>
-          <div className="flex flex-col container min-h-screen">
+          <div className="flex items-center flex-col min-h-screen">
             <Header />
-            <main className="flex flex-col flex-grow h-full items-center justify-between p-24">
-              {children}
-            </main>
+            <main className="flex flex-col justify-center w-full flex-grow h-full">{children}</main>
             <Footer />
           </div>
         </body>
